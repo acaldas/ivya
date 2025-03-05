@@ -35,7 +35,10 @@ export {
   getAriaLevel,
   getAriaPressed,
   getAriaSelected,
+  getAriaInvalid,
   getElementAccessibleName,
+  getElementAccessibleDescription,
+  getElementAccessibleErrorMessage,
 } from './roleUtils'
 export { isElementVisible } from './domUtils'
 
