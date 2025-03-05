@@ -553,7 +553,7 @@ function asFlatString(s: string): string {
   // Note that non-breaking spaces are preserved.
   return s
     .split('\u00A0')
-    .map((chunk) => chunk.replace(/\r\n/g, '\n').replace(/\s+/g, ' '))
+    .map((chunk) => chunk.replace(/\r\n/g, '\n').replace(/[\u200b\u00ad]/g, '').replace(/\s\s*/g, ' '))
     .join('\u00A0')
     .trim()
 }

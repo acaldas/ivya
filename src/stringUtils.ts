@@ -78,7 +78,7 @@ function cssEscapeOne(s: string, i: number): string {
 
 export function normalizeWhiteSpace(text: string): string {
   const result = text
-    .replace(/\u200B/g, '')
+    .replace(/[\u200b\u00ad]/g, '')
     .trim()
     .replace(/\s+/g, ' ')
   return result
