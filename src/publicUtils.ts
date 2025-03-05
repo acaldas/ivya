@@ -36,7 +36,7 @@ export {
   getAriaPressed,
   getAriaSelected,
   getElementAccessibleName,
-  isElementHiddenForAria,
 } from './roleUtils'
+export { isElementVisible } from './domUtils'
 
 export { cssEscape } from './stringUtils'
