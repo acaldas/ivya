@@ -41,5 +41,5 @@ export {
   getElementAccessibleErrorMessage,
 } from './roleUtils'
 export { isElementVisible } from './domUtils'
-
+export { beginAriaCaches, endAriaCaches } from './roleUtils'
 export { cssEscape } from './stringUtils'
